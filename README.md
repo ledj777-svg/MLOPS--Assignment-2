@@ -19,30 +19,33 @@ This made it perfect for this MLOps assignment focused on workflow efficiency ra
 
 ### Setup Instructions
 
-Clone Repository
+**Clone Repository**
+
 bash
 git clone https://github.com/ledj777-svg/MLOPS--Assignment-2.git
 
 cd mlops-assignment2
 
-Create & Activate Environment
+**Create & Activate Environment**
 
 uv venv
 
 .venv\Scripts\activate    
 
 
-Install Dependencies
+**Install Dependencies**
 
 uv pip install -r requirements.txt
 
 
-Logins
+**Logins**
+
 wandb login
 
 huggingface-cli login
 
-Project Strcutre
+**Project Strcutre**
+
 1-data.py
 
 2-train.py
@@ -60,15 +63,15 @@ Project Strcutre
 8-eval_report.json
 
 
-Training with W&B tracking
+**Training with W&B tracking**
 
 python train.py
 
-Final Evaluation
+**Final Evaluation**
 
 python eval.py
 
-Result 
+**Result **
 
 Accuracy-0.782
 
