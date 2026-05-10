@@ -6,15 +6,13 @@ This project demonstrates a complete **MLOps workflow** — converting a Jupyter
 
 
 **Project Description**
-This project implements a complete MLOps pipeline for fine-tuning a DistilBERT model on the UCSD Goodreads book reviews dataset to classify book reviews into 8 different genres (Poetry, Children, Comics & Graphic, Fantasy & Paranormal, History & Biography, Mystery/Thriller/Crime, Romance, and Young Adult). 
-The workflow includes converting a Jupyter notebook into clean, modular Python scripts (data.py, train.py, eval.py, utils.py), proper data preprocessing and tokenization, model training using Hugging Face Transformers with experiment tracking via Weights & Biases (W&B), detailed evaluation with classification metrics, 
-and finally deploying the trained model along with the tokenizer to the Hugging Face Hub for public access. The entire process emphasizes reproducibility, production-ready code practices, and end-to-end MLOps principles.
+This project implements a full MLOps pipeline for fine-tuning a DistilBERT model on the UCSD Goodreads book reviews dataset to classify book reviews into 8 different genres (Poetry, Children, Comics & Graphic, Fantasy & Paranormal, History & Biography, Mystery/Thriller/Crime, Romance, and Young Adult). 
+The workflow includes converting the Jupyter notebook to clean and modular Python scripts (data.py, train.py, eval.py, utils.py), proper data preprocessing and tokenization, model training using Hugging Face Transformers and experiment tracking with Weights & Biases (W&B), detailed evaluation using classification metrics, and finally deploying the trained model and tokenizer to the Hugging Face Hub for public access. The entire process focuses on reproducibility, production-ready code practices and end-to-end MLOps principles.
 
 ============================================================================
 
 **Model Selection**
-DistilBERT-base-cased was selected because it is 40% smaller and 60% faster than BERT-base while retaining ~97% of its language understanding capability. 
-This made it perfect for this MLOps assignment focused on workflow efficiency rather than maximum accuracy.
+DistilBERT-base-cased was chosen because it is 40% smaller and 60% faster than BERT-base while keeping about 97% of its language understanding ability. This made it ideal for this MLOps assignment, which focused on workflow efficiency instead of maximum accuracy.
 
 ============================================================================
 
