@@ -4,7 +4,7 @@ import os
 
 
 REPO_ID = "JD45-d/distilbert-goodreads-genre-classifier"
-HF_TOKEN = "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"   # Your token
+HF_TOKEN =  "# Your token"
 
 print("Logging into Hugging Face...")
 login(token=HF_TOKEN)
