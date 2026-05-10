@@ -1,0 +1,6 @@
+transformers
+torch
+wandb
+scikit-learn
+requests
+gdown
