@@ -8,7 +8,7 @@ REPO_ID = "JD45-d/distilbert-goodreads-genre-classifier"
 print(" Logging into Hugging Face...")
 
 # Paste your latest token here (between the quotes)
-HF_TOKEN = "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"
+HF_TOKEN = "your token"
 login(token=HF_TOKEN)
 
 print("Login successful!")
