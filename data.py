@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 import torch
 from torch.utils.data import Dataset
 
-# ====================== LABEL MAPPING ======================
+
 id2label = {
     0: "poetry",
     1: "children",
@@ -21,7 +21,7 @@ id2label = {
 label2id = {v: k for k, v in id2label.items()}
 
 
-# ====================== DATASET CLASS ======================
+
 class GoodreadsDataset(Dataset):
     def __init__(self, encodings, labels):
         self.encodings = encodings
@@ -36,7 +36,7 @@ class GoodreadsDataset(Dataset):
         return len(self.labels)
 
 
-# ====================== DATA LOADING ======================
+
 def load_reviews(url, head=10000, sample_size=800):
     reviews = []
     response = requests.get(url, stream=True, timeout=30)
@@ -58,7 +58,7 @@ def load_reviews(url, head=10000, sample_size=800):
     return reviews
 
 
-# ====================== PREPARE DATA ======================
+
 def prepare_data(sample_size=200, test_size=0.2, max_length=512):
     """Prepare train and test datasets"""
 
@@ -73,7 +73,7 @@ def prepare_data(sample_size=200, test_size=0.2, max_length=512):
         'young_adult': 'https://mcauleylab.ucsd.edu/public_datasets/gdrive/goodreads/byGenre/goodreads_reviews_young_adult.json.gz'
     }
 
-    print("📥 Downloading and loading reviews...")
+    print(" Downloading and loading reviews...")
     genre_reviews_dict = {}
 
     for genre, url in genre_url_dict.items():
@@ -96,7 +96,7 @@ def prepare_data(sample_size=200, test_size=0.2, max_length=512):
     from transformers import DistilBertTokenizerFast
     tokenizer = DistilBertTokenizerFast.from_pretrained('distilbert-base-cased')
 
-    print("🔤 Tokenizing...")
+    print(" Tokenizing...")
     train_encodings = tokenizer(train_texts, truncation=True, padding=True, max_length=max_length)
     test_encodings = tokenizer(test_texts, truncation=True, padding=True, max_length=max_length)
 
