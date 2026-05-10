@@ -17,7 +17,7 @@ This project demonstrates a complete **MLOps workflow** — converting a Jupyter
 
 ### 1. Clone Repository
 bash
-git clone https://github.com/ledj777-svg/mlops-assignment2.git
+git clone https://github.com/ledj777-svg/MLOPS--Assignment-2.git
 cd mlops-assignment2
 
 ### 2.Create & Activate Environment
