@@ -84,11 +84,11 @@ python eval.py
 
 **Result**
 
-Accuracy-0.782
+Accuracy-0.586
 
-F1 Score- 0.779
+F1 Score- 0.578
 
-Eval Loss-0.612
+Eval Loss-1.189
 
 ============================================================================
 
